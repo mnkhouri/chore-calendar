@@ -1,0 +1,17 @@
+{
+  "name": "chore-calendar",
+  "version": "0.0.1",
+  "description": "Generate a calendar of recurring chores",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mnkhouri/chore-calendar"
+  },
+  "author": "Marc Khouri",
+  "license": "MIT",
+  "dependencies": {
+  }
+}

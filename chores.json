@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Wipe kitchen counters and handles",
+        "period": 1,
+        "offset": 0,
+        "doer": "Mary"
+    },
+    {
+        "name": "Vacuum kitchen",
+        "period": 1,
+        "offset": 0,
+        "doer": "Mary"
+    },
+    {
+        "name": "Laundry",
+        "period": 1,
+        "offset": 0,
+        "doer": "Edward"
+    },
+    {
+        "name": "Wipe living room table",
+        "period": 2,
+        "offset": 0,
+        "doer": "Edward"
+    },
+    {
+        "name": "Dust bookshelves, desk",
+        "period": 2,
+        "offset": 0,
+        "doer": "Mary"
+    },
+    {
+        "name": "Vacuum living rm, bedroom, bathroom",
+        "period": 2,
+        "offset": 0,
+        "doer": "Mary"
+    },
+    {
+        "name": "Wipe down bathroom",
+        "period": 2,
+        "offset": 0,
+        "doer": "Edward"
+    },
+    {
+        "name": "Clean toilet",
+        "period": 4,
+        "offset": 0,
+        "doer": "Mary"
+    },
+    {
+        "name": "Clean shower",
+        "period": 4,
+        "offset": 0,
+        "doer": "Edward"
+    }
+]
