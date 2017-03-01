@@ -2,7 +2,7 @@
 const choreDefinitions = require('./chores.json')
 const config = require('./config.json')
 
-const MANDATORY_CHORE_PROPERTIES = ['period', 'offset', 'doer']; // 'name' is implicit
+const MANDATORY_CHORE_PROPERTIES = ['name', 'period', 'offset', 'doer'];
 const LOCALE = "en-us"
 
 function validateChores (chores) {
@@ -36,7 +36,7 @@ function printCalendar (calendar, choreDay) {
     for (var week = 0; week <= calendar.length - 1; week++) {
         console.log(startingDate.toDateString() + " (week " + (week + 1) + "):")
         for (var person in calendar[week]) {
-            console.log("    " + person + ": " + calendar[week][person])
+            console.log("    " + person + ": " + calendar[week][person].join('; '))
         }
         startingDate = startingDate.addDays(7);
     }
@@ -50,7 +50,8 @@ function generateWeeklyCalendar (chores) {
         for (var i = 0; i <= chores.length - 1; i++) {
             var c = chores[i];
             if (week % (c.period + c.offset) == 0) {
-                thisWeek[c.doer] = (thisWeek[c.doer] ? thisWeek[c.doer] + "; " : "") + c.name
+                thisWeek[c.doer] = thisWeek[c.doer] || []
+                thisWeek[c.doer].push(c.name)
             }
         }
         calendar[week] = thisWeek;
