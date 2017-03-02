@@ -1,5 +1,7 @@
 # Chore Calendar
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/mnkhouri/chore-calendar.svg)](https://greenkeeper.io/)
+
 Generate a weekly chore calendar.
 
 ## To use
